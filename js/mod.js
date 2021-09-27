@@ -1,8 +1,8 @@
 let modInfo = {
 	name: "The great devourer Tree",
-	id: "mymod",
+	id: "The Tyranid",
 	author: "taunty",
-	pointsName: "gaunt",
+	pointsName: "biomatter",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
