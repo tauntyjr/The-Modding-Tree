@@ -1,6 +1,6 @@
 let modInfo = {
 	name: "The great devourer Tree",
-	id: "The Tyranid",
+	id: "mymod",
 	author: "taunty",
 	pointsName: "biomatter",
 	modFiles: ["layers.js", "tree.js"],
@@ -43,6 +43,8 @@ function getPointGen() {
 		return new Decimal(0)
 
 	let gain = new Decimal(1)
+	if (hasUpgrade('R', 11)) gain = gain.times(2)
+	if (hasUpgrade('R', 12)) gain = gain.times(upgradeEffect('R', 12))
 	return gain
 }
 
